@@ -1,0 +1,26 @@
+#anything in the log folder
+/logs
+
+#php error logs
+error_log
+app/error_log
+app/models/paypal/log
+app/user_action.log
+home-evaluation/error_log
+home-evaluation/registration.log
+
+#htaccess of the sites
+.htaccess
+app/.htaccess
+
+#database configuration file
+/app/models/MySQLConnection.class.php
+
+#config file
+/app/models/Config.class.php
+
+#php syntax checker
+.phpintel/
+
+#local database
+database/

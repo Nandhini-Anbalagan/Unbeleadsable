@@ -1,0 +1,28 @@
+-remove account # from agent fail email
+-manual email sent not from support but from agent
+-test mesasge history
+-landing page message (write that is auto generated and bla bla bal)
+
+
+
+Consolitation
+DBMananger
+EmailCron
+Functions
+index (en/fr)
+DBM
+Terms and Conditions on all footer
+funnels
+argents base
+agents load
+core.js
+agent post
+
+
+
+
+
+Nice To Have
+-Last lead received
+-agent_lead
+-home-evaluation/core
