@@ -1,5 +1,5 @@
-<?php 
-	$page = rtrim(basename($_SERVER['PHP_SELF']), ".php"); 
+<?php
+	$page = rtrim(basename($_SERVER['PHP_SELF']), ".php");
 	require_once('app/models/Config.class.php');
 ?>
 
@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 	<base href="<?php echo substr(Config::WEBSITE_URL, 0, -3)  ?>">
-	<title>Generate Real Estate Leads | Unbeleadsable</title> 
+	<title>Generate Real Estate Leads | Unbeleadsable</title>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,17 +46,17 @@
 				</button>
 				<a class="navbar-brand" href="/" title="Unbeleadsable">
 					<img class="logo hidden-sm" alt="Unbeleadsable" src="assets/img/logo.png">
-					<img class="logo-sm hidden-lg hidden-md hidden-xs" alt="Unbeleadsable" src="assets/img/logo.png">        
+					<img class="logo-sm hidden-lg hidden-md hidden-xs" alt="Unbeleadsable" src="assets/img/logo.png">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="onepage-nav">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/#video-reviews" data-target="#video-reviews">Testimonials</a></li> 
+					<li><a href="/#video-reviews" data-target="#video-reviews">Testimonials</a></li>
 					<li><a href="/#book-features" data-target="#book-features">Features</a></li>
-					<li><a href="/#free-samples" data-target="#free-samples">Sneak Peek</a></li> 
-					<li><a href="/#pricing-offers" data-target="#pricing-offers">Pricing</a></li>                            
+					<li><a href="/#free-samples" data-target="#free-samples">Sneak Peek</a></li>
+					<li><a href="/#pricing-offers" data-target="#pricing-offers">Pricing</a></li>
 					<li><a href="/#about-author" data-target="#about-author">About</a></li>
-					<li><a href="/contact">Contact Us</a></li>
+					<li><a href="" data-toggle="modal" data-target="#contactUsModal">Contact Us</a></li>
 					<li><a href="/app">Login</a></li>
 					<li><a href="/fr">Français</a></li>
 				</ul>
@@ -64,6 +64,5 @@
 		</div>
 	</nav>
 
-	
 
-
+<?php include("contactUsPopup.php") ?>

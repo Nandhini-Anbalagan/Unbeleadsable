@@ -49,11 +49,11 @@
             <div class="col-sm-4 text-left">
               <h5 style="font-size: 19px">SIEGE SOCIALE UNBELEADSABLE.COM</h5>
               <br>
-              <div class="">
+              <div class="contactInfo">
                 <p><i class="fa fa-plus-square fa-fw"></i>4420 Levesque E. Suite #100</p>
-                <p><i class="fa fa-plus-square fa-fw"></i>Laval, Québec, CA H7C 2R1</p>
-                <p><i class="fa fa-phone-square fa-fw"></i>+1 (514) 923-5323</p>
-                <p><i class="fa fa-pencil-square fa-fw"></i>support@unbeleadsable.com</p>
+                <p>Laval, Québec, CA H7C 2R1</p>
+                <p><i class="fa fa-phone-square fa-fw"></i><a href="tel:+15149235323" class="ahover">1 (514) 923-5323</a></p>
+                <p><i class="fa fa-pencil-square fa-fw"></i><a href="mailto:support@unbeleadsable.com" class="ahover">support@unbeleadsable.com</a></p>
               </div>
             </div>
           </div>
@@ -61,32 +61,5 @@
       </div>
     </section>
   </div>
-
-  <section style="padding: 0;">
-    <div id="map" style="height: 350px;"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 45.6014996, lng: -73.6502636};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: uluru,
-          scrollwheel: false
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-        map.addListener('click', function(){
-          map.setOptions({scrollwheel: true});
-        });
-        map.addListener('mouseout', function(){
-          map.setOptions({scrollwheel: false});
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSOaCXDTQy_VXFflgZg19OwFqLIUmZ1eM&callback=initMap">
-    </script>
-  </section>
 
 <?php include("footer.php") ?>

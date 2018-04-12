@@ -201,7 +201,7 @@
 											<a href="fr/contact" class="btn btn-primary btn-lg">Demander un appel téléphonique</a>
 									</p>
 									<br>
-									<p style="font-size: 18px;" class="text-white">Ou appelez-nous au <strong class="text-white">1 (514) 923-5323</strong> si vous préférez</p>
+									<p style="font-size: 18px;" class="text-white">Ou appelez-nous au <strong class="text-white"><a href="tel:+15149235323" class="text-white ahover">1 (514) 923-5323</a></strong> si vous préférez</p>
 							</div>
 					</div>
 			</div>
@@ -224,7 +224,7 @@
 				<div class="container">
 					<div class="row">
 						<!-- tabs menu for tablet reader-->
-						<div class="col-md-3 col-md-push-9 tablet-menu wow fadeInLeft"> 
+						<div class="col-md-3 col-md-push-9 tablet-menu wow fadeInLeft">
 							<h2 class="title">Choisissez une page:</h2>
 							<ul class="nav nav-pills nav-stacked">
 								<li role="presentation" class="active">
@@ -363,7 +363,7 @@
 					<div class="col-sm-4">
 						<div class="pricing-table emphasized wow fadeInDown">
 							<div class="panel-heading">
-								<h4 class="plan-title">FRAIS D'ABONNEMENT 
+								<h4 class="plan-title">FRAIS D'ABONNEMENT
 									<span class="hidden-sm">RÉCURRENT CHAQUE MOIS</span>
 								</h4>
 								<p class="plan-price" style="font-size: 35px;">
@@ -376,7 +376,7 @@
 									<li>Suivi</li>
 									<li>Outils marketing</li>
 									<li>Communauté de soutien</li>
-									<li>Et bien plus</li> 
+									<li>Et bien plus</li>
 								</ul>
 							</div>
 							<div class="panel-footer">
@@ -386,7 +386,7 @@
 					<div class="col-sm-4">
 						<div class="pricing-table wow fadeInUp">
 							<div class="panel-heading">
-								<h4 class="plan-title">CAMPAGNE PUBLICITAIRE 
+								<h4 class="plan-title">CAMPAGNE PUBLICITAIRE
 									<span class="hidden-sm">OBTENIR PLUS DE PROSPECTS SUR LES MEDIAS SOCIAUX</span>
 								</h4>
 								<p class="plan-price" style="font-size: 35px;">
@@ -431,7 +431,7 @@
 						<h4>La clé</h4>
 						<p class="text-justify">Unbeleadsable.com, un logiciel qui enlèverait le mal de tête du marketing et d'attirer des nouveaux clients potentiels. Unbeleadsable.com apporte le public souhaité directement aux agents, leur permettant d'obtenir un afflux de vendeur prospects, acheteurs potentiels, et encore plus directement dans leur base de données. Avec cet outil incroyable, les agents peuvent se concentrer sur leur vrai passion : la vente.</p>
 						<h4>Le résultat</h4>
-						<p class="text-justify">Unbeleadsable.com permet à l'agent de laisser la gestion du contact avec leur base de données, sans tracas, à Unbeleadsable.com par des entonnoirs automatiques et bien plus encore. Unbeleadsable.com est devenu un outil incontournable pour tant d'agents et nous sommes très fier de faire partie intégrante de leur succès. 
+						<p class="text-justify">Unbeleadsable.com permet à l'agent de laisser la gestion du contact avec leur base de données, sans tracas, à Unbeleadsable.com par des entonnoirs automatiques et bien plus encore. Unbeleadsable.com est devenu un outil incontournable pour tant d'agents et nous sommes très fier de faire partie intégrante de leur succès.
 						<br>
 						Unbeleadsable.com permet aux agents de se concentrer sur une chose : d'assurer une croissance constante de leur entreprise et un contact constant avec leurs clients.
 						</p>

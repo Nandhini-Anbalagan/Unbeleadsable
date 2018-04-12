@@ -1,13 +1,13 @@
-<?php 
+<?php
   $page = rtrim(basename($_SERVER['PHP_SELF']), ".php");
-  require_once('../app/models/Config.class.php') 
+  require_once('../app/models/Config.class.php')
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <base href="<?php echo substr(Config::WEBSITE_URL, 0, -3)  ?>">
-  <title>Real Estate Seller Leads CRM | Unbeleadsable</title> 
+  <title>Real Estate Seller Leads CRM | Unbeleadsable</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,17 +46,17 @@
         </button>
         <a class="navbar-brand" href="/fr" title="Unbeleadsable">
           <img class="logo hidden-sm" alt="Unbeleadsable" src="assets/img/logo.png">
-          <img class="logo-sm hidden-lg hidden-md hidden-xs" alt="Unbeleadsable" src="assets/img/logo.png">        
+          <img class="logo-sm hidden-lg hidden-md hidden-xs" alt="Unbeleadsable" src="assets/img/logo.png">
         </a>
       </div>
       <div class="collapse navbar-collapse" id="onepage-nav">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="fr/#video-reviews" data-target="#video-reviews">Témoignages</a></li> 
+          <li><a href="fr/#video-reviews" data-target="#video-reviews">Témoignages</a></li>
           <li><a href="fr/#book-features" data-target="#book-features">Caractéristiques</a></li>
-          <li><a href="fr/#free-samples" data-target="#free-samples">Aperçu</a></li> 
-          <li><a href="fr/#pricing-offers" data-target="#pricing-offers">Tarification</a></li>                            
+          <li><a href="fr/#free-samples" data-target="#free-samples">Aperçu</a></li>
+          <li><a href="fr/#pricing-offers" data-target="#pricing-offers">Tarification</a></li>
           <li><a href="fr/#about-author" data-target="#about-author">À propos</a></li>
-          <li><a href="fr/contact">Contactez nous</a></li>
+          <li><a href="" data-toggle="modal" data-target="#contactUsModal">Contactez nous</a></li>
           <li><a href="/app">Connexion</a></li>
           <li><a href="/">English</a></li>
         </ul>
@@ -64,6 +64,4 @@
     </div>
   </nav>
 
-  
-
-
+<?php include("contactUsPopup.php") ?>

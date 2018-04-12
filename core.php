@@ -41,7 +41,7 @@
 
 				//confirmation email to admin(s)
 				$to = 'sales@unbeleadsable.com';
-				$to2 = 'barbara@unbeleadsable.com';
+				$to2 = 'matteofiorilli@gmail.com';
 
 				$from = "support@unbeleadsable.com";
 				$subject = "New Lead Registration";
@@ -61,7 +61,6 @@
 
 				Functions::sendEmail($from,$to,$subject,$message);
 				Functions::sendEmail($from,$to2,$subject,$message);
-				Functions::sendEmail($from,$to3,$subject,$message);
 
 				/*SMS to Matteo*/
 				$id 	= "AC56ea9bbf60388f2c561911073dbbd132";
@@ -103,13 +102,13 @@
       echo json_encode(array("success"=>'1', "msg"=>$msg, "lang"=>$_POST['lang']));
     else
       echo json_encode(array("success"=>'0', "msg"=>$msg));
- 
+
     die();
   }
 
   if(isset($_POST['contactUs'])){
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-  
+
     if(trim($_POST['name']) == "" || trim($_POST['email']) == "" || trim($_POST['phone']) == "" || trim($_POST['message']) == ""){
       $msg = $_POST['lang'] == 'EN'?'Sorry, all fields are required!':'Désolé, tous les champs sont nécessaires!';
       header('Content-type: text/json');
@@ -125,8 +124,9 @@
 		}
 
     //confirmation email to admin(s)
-        $to = 'matteofiorilli@gmail.com';
+		$to = 'support@unbeleadsable.com';
 		$to2 = 'barbara@unbeleadsable.com';
+		$to3 = 'matteo@unbeleadsable.com';
 
 		$from = "support@unbeleadsable.com";
 
@@ -151,4 +151,3 @@
 	}
 
 ?>
-

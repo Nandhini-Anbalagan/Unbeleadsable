@@ -189,7 +189,7 @@
 												<a href="contact" class="btn btn-primary btn-lg">Request a phone call</a>
 										</p>
 										<br>
-										<p style="font-size: 18px;" class="text-white">Or call us at <strong class="text-white">1 (514) 923-5323</strong> if you'd prefer</p>
+										<p style="font-size: 18px;" class="text-white">Or call us at <strong class="text-white"><a href="tel:+15149235323" class="text-white ahover">1 (514) 923-5323</a></strong> if you'd prefer</p>
 								</div>
 						</div>
 				</div>
@@ -212,7 +212,7 @@
 				<div class="container">
 					<div class="row">
 						<!-- tabs menu for tablet reader-->
-						<div class="col-md-3 col-md-push-9 tablet-menu wow fadeInLeft"> 
+						<div class="col-md-3 col-md-push-9 tablet-menu wow fadeInLeft">
 							<h2 class="title">Choose a Page:</h2>
 							<ul class="nav nav-pills nav-stacked">
 								<li role="presentation" class="active">
@@ -295,7 +295,7 @@
 											<a data-featherlight="assets/img/funnelz.png"><img src="assets/img/funnelz.png" alt="" class="img-responsive"></a>
 										</div>
 									</div>
-								</div> 
+								</div>
 							</div>
 						</div>
 					</div>
