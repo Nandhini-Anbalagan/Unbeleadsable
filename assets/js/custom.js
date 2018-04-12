@@ -56,10 +56,10 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#button-send-contact').click(function(event){
+	$('#button-send-contact, #button-send-contact-popup').click(function(event){
 		$(this).html('Sending...');
 		event.preventDefault();
-
+		alert();
 		$('html, body').scrollTo($('#contact'), 'fast');
 		$.ajax({
 			type: 'POST',

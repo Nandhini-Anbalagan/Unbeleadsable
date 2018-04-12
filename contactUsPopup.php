@@ -34,7 +34,7 @@
             <textarea class="form-control col-sm-6" rows="7" name="message" id="inputMessage1" placeholder="Your Message.." required></textarea>
           </div>
           <div id="btnSubmit" class="">
-            <a id="button-send-contact" class="btn btn-primary btn-lg" type="submit">
+            <a id="button-send-contact-popup" class="btn btn-primary btn-lg" type="submit">
               <i class="fa fa-send"></i> Submit
             </a>
           </div>
