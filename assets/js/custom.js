@@ -163,7 +163,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: 'POST',
 				url: 'https://unbeleadsable.com/core.php',
-				data: $('#contactForm').serialize(),
+				data: $('#contactForm' + value2).serialize(),
 				datatype: 'json',
 				success: function(res) {
 					console.log(res);

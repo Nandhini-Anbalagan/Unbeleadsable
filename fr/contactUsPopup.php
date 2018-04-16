@@ -9,7 +9,7 @@
     <div class="modal-body row">
       <!-- Contact Form -->
       <div id="formDiv">
-        <form id="contactForm" class="container-fluid">
+        <form id="contactFormPopup" class="container-fluid">
           <div class="row">
             <h5 class="col-6 formHeader">Veuillez compléter le formulaire ci-dessous pour vous contacter</h5>
           </div>
