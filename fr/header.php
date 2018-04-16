@@ -4,7 +4,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <base href="<?php echo substr(Config::WEBSITE_URL, 0, -3)  ?>">
   <title>Real Estate Seller Leads CRM | Unbeleadsable</title>

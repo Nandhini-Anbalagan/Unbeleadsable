@@ -1,5 +1,4 @@
 <?php include("header.php") ?>
-
   <!-- HEADER
   ============================================== -->
   <header class="home-header contact" style="height: 300px;"><h1 style="padding-top: 100px; font-size: 80px;">Contactez nous</h1></header>
@@ -15,7 +14,7 @@
               <br>
               <form id="contactForm">
                 <input type="hidden" name="contactUs">
-                <input type="hidden" name="lang" value="EN">
+                <input type="hidden" name="lang" value="FR">
                 <div class="col-sm-12">
                   <div class="form-group">
                     <input class="form-control" type="text" name="name" id="inputName1" placeholder="Votre nom.." required>

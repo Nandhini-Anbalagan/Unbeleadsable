@@ -39,8 +39,8 @@
             </a>
           </div>
           <div class="row text-center">
-            <div id="successContact" class="col-sm-6">Message sent! We'll get in touch with you shortly.</div>
-            <div id="errorContact" class="col-sm-6"></div>
+            <div id="successContactPopup" hidden="true">Message sent! We'll get in touch with you shortly.</div>
+            <div id="errorContactPopup"></div>
           </div>
         </form>
       </div>

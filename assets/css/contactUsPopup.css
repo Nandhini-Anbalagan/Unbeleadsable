@@ -28,6 +28,11 @@
   height: 285px;
 }
 
+#successContactPopup, #errorContactPopup {
+  margin-top: 15px;
+  color: #e51937;
+}
+
 @media (max-width: 995px) {
   #formDiv, #contactPopupInfo, #contactPopupP {
     float: none;

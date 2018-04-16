@@ -15,7 +15,7 @@
           </div>
           <br>
           <input type="hidden" name="contactUs">
-          <input type="hidden" name="lang" value="EN">
+          <input type="hidden" name="lang" value="FR">
           <div>
             <div class="form-group row">
               <input class="form-control col-sm-6" type="text" name="name" id="inputName1" placeholder="Votre nom.." required>
@@ -39,8 +39,8 @@
             </a>
           </div>
           <div class="row text-center">
-            <div id="successContact" class="col-sm-6">Message envoyé! Nous vous contacterons sous peu.</div>
-            <div id="errorContact" class="col-sm-6"></div>
+            <div id="successContactPopup" hidden="true">Message envoyé! Nous vous contacterons sous peu.</div>
+            <div id="errorContactPopup"></div>
           </div>
         </form>
       </div>
