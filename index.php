@@ -14,7 +14,7 @@
 					</p><br><br><br>
 					<p class="nowrap wow fadeInUp" data-wow-delay="1.9s">
 						<button class="scrollToSign btn btn-primary md-margin-r claim-it"><span>Claim Your Area Now!</span></button>
-						<button class="scrollToVideo btn btn-half-light"><span>Learn more</span></button>
+						<button class="scrollToVideo btn btn-half-light"><span>Learn moree</span></button>
 					</p>
 				</div>
 				<div class="col-md-6 header-image wow fadeInRightBig" data-wow-delay="1.5s">
