@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-md-6 header-content">
 					<h1 class="header-title">
-						<span class="highlight wow fadeInUp" data-wow-delay="0.7s">Generatee Real Estate Leads!</span>
+						<span class="highlight wow fadeInUp" data-wow-delay="0.7s">Generate Real Estate Leads!</span>
 						<span class="highlight wow fadeInUp" data-wow-delay="1.1s">A Smart and Easy Way to Generate Leads Online.</span>
 					</h1>
 					<p class="header-desc wow fadeInUp" data-wow-delay="1.5s" style="background: none; visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">
