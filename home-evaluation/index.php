@@ -7,7 +7,7 @@
 	if(!empty($_SESSION['got'])){
 		include("../app/head.php");
 		$agent = $db->getSellerLandingPage($_SESSION['got']['a']);
-		
+
 		$final_text_en = explode(" - ", $agent['final_text_en']);
 		$final_text_fr = explode(" - ", $agent['final_text_fr']);
 	}
@@ -15,10 +15,10 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	
+
 	<?php if($_GET['l'] == 'e'){ ?>
 	<title>What's your home really worth?</title>
 	<meta name="DESCRIPTION" content="Find out the value of your home with this free home value calculator"/>
@@ -104,7 +104,7 @@
 									</div>
 								</div>
 
-								
+
 							</fieldset>
 							<fieldset id="third">
 								<h2><?php echo $_SESSION['got']['l'] == 'e'?$agent['sub_title_2_en']:$agent['sub_title_2_fr'] ?></h2>
@@ -114,7 +114,7 @@
 										<div class="row">
 											 <div class="col-md-4" style="margin: 0; padding: 0">
 												<img src="../app/uploads/avatars/<?php echo $agent['agent_avatar'] ?>" alt="avatar" class="img-thumbnail img-responsive">
-											</div> 
+											</div>
 											<div class="col-md-8 agentInfo">
 												<p><?php echo $agent['agent_name'] ?></p>
 												<p><em><?php echo $_SESSION['got']['l'] == 'e'?$agent['agent_title_en']:$agent['agent_title_fr'] ?></em></p>
@@ -135,7 +135,7 @@
 									<?php } ?>
 									<div class="col-md-6">
 
-									<?php 
+									<?php
 										$p = "";
 										$final_text = $_SESSION['got']['l'] == 'e'?$final_text_en:$final_text_fr;
 										echo "<p>" . nl2br(implode("", $final_text)) . "</p>";
@@ -162,7 +162,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSOaCXDTQy_VXFflgZg19OwFqLIUmZ1eM&amp;libraries=places"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8hEM4oF88dSUvW3MidSqSlbDf4oxwRXI&amp;libraries=places"></script>
 
 	<script>
 		(function ($) {
@@ -215,7 +215,7 @@
 					$("#second").fadeIn('slow');
 					$("#first").css({'display': 'none'});
 
-					var center = map.getCenter(); 
+					var center = map.getCenter();
 					google.maps.event.trigger(map, 'resize');
 					map.setCenter(center);
 
