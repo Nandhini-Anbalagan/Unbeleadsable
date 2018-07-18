@@ -22,7 +22,7 @@ $totalAgents = count($agents);
 
 ?>
 <div class="m-b-30">
-	<h2 class="page-title pull-left">Agents <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2> 
+	<h2 class="page-title pull-left">Agents <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2>
 	<?php if($_SESSION['user']["level"] > 20){ ?>
 	<a href="#" class="btn btn-danger waves-effect waves-light m-l-5 pull-right" data-toggle="modal" data-target="#allEmaillModal"><i class="fa fa-envelope"></i>&nbsp;Email All Agents</a>
 	<div class="btn-group pull-right m-l-5">
@@ -286,7 +286,7 @@ $totalAgents = count($agents);
 
 							<div class="form-group ">
 								<div class="col-sm-7 col-sm-offset-4">
-									<input id="deleteagent" type="checkbox" class="styledCheckbox" name="deleteagent">
+									<input id="deleteAgent" type="checkbox" class="styledCheckbox" name="deleteAgent">
 									<label for="deleteUser" style="vertical-align: super;">Delete Agent</label>
 								</div>
 							</div>
@@ -317,7 +317,7 @@ $totalAgents = count($agents);
 							<input type="hidden" name="action" value="<?php echo Tokenizer::add('post-action-agent', 20, 'agent'); ?>">
 							<input type="hidden" name="case" value="<?php echo Tokenizer::add('post-case-agent-user', 30, 'user'); ?>">
 							<input type="hidden" name="user_id" value="">
-							
+
 
 							<div class="form-group">
 								<label for="email" class="col-sm-4 control-label">Email</label>
@@ -462,4 +462,3 @@ $totalAgents = count($agents);
 		$('select').select2();
 		});
 	</script>
-
