@@ -7,7 +7,7 @@
 				<div class="section-header">
           <h3 class="section-title">Customer Testimonials</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">See What Top Brokers Are Saying About Unbeleadsable!</p>
+          <p class="section-description">See What Top Brokers Are Saying About UUUnbeleadsable!</p>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 video-item wow zoomIn">
