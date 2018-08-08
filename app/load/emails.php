@@ -3,7 +3,7 @@
 		include("../head.php");
 		$dynamicFormId = Tokenizer::get('dynamic-form-id', Tokenizer::GET_TOKEN);
 	}
-		
+
 	$emails = $db->getEmails();
 ?>
 
@@ -48,7 +48,7 @@
 					<h2 class="panel-title">Compose Email</h2>
 				</div>
 				<div class="panel-body"></div>
-			</div>
+				</div>
 		</div>
 	</div>
 </div>
@@ -56,7 +56,7 @@
 <script>
 	$(document).ready(function(){
 		$('#email-table').dataTable({"bSort": false});
-		
+
 		$('body').on('click', '#email-table tbody tr', function(){
 			$('#<?php echo $dynamicFormId; ?>').append('<input type="hidden" name="action" value="<?php echo Tokenizer::get('post-action-email'); ?>">'
 				+ '<input type="hidden" name="case" value="<?php echo Tokenizer::add('post-case-email-fetch', 30, 'preview'); ?>">'
