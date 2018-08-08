@@ -875,3 +875,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+.author-intro h4{
+  font-weight: bold;
+  color: #03C4EB;
+}
