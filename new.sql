@@ -20,3 +20,12 @@ CREATE TABLE unbeleadsablev1.`agent_leads` (
   `lead_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`lead_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=300 DEFAULT CHARSET=latin1
+
+CREATE TABLE unbeleadsablev1.`emails_templates` (
+  `email_template_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `content` text NOT NULL,
+  `slug` varchar(50) NOT NULL,
+  `status` smallint(5) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`email_template_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4
