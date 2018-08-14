@@ -1,5 +1,5 @@
 body {
-	background: #ebeff2 url(../img/bg/bg.png);
+	background: #ebeff2 url(../img/architectural-design-architecture-buildings-618079.jpg);
 	margin: 0;
 	overflow-x: hidden;
 	color: #797979;
@@ -7,6 +7,42 @@ body {
 	background-position: bottom center;
 	background-attachment: fixed;
 }
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+.navbar-brand { position: relative; z-index: 2; }
+.navbar-nav {
+    width: 100%;
+    text-align: center !important;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  body{
+    background: #ebeff2 url(../img/architectural-design-architecture-buildings-618079.jpg);
+	margin: 0;
+	overflow-x: hidden;
+	color: #797979;
+	background-size: cover;.
+	background-position: bottom center;
+	background-attachment: fixed;
+  }
+
+.btn { position: relative; text-align: center; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: center; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
 
 .wrapper{
 	min-height: 100vh;
