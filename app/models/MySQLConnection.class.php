@@ -4,7 +4,7 @@ abstract class MySQLConnection{
 	protected $myDB;
 	public function __construct(){
 		$host = "localhost";
-		$db = 'unbeleadsable';
+		$db = 'unbeleadsablev1';
 		$username = 'root';
 		$password = '';
 
