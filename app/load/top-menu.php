@@ -76,12 +76,12 @@
 					<li class="<?php echo $page == 'leads'?'active':''; ?>">
 						<a href="leads"><i class="md md-contacts"></i>Leads</a>
 					</li>
-				
+
 					<li class="<?php echo $page == 'areas'?'active':''; ?>">
 						<a href="areas"><i class="md md-my-location"></i>Areas</a>
 					</li>
 					<li class="<?php echo $page == 'agents'?'active':''; ?>">
-						<a href="agents"><i class="md md-perm-identity"></i>Agents</a>
+						<a href="agents"><i class="md md-perm-identity"></i>Customer</a>
 					</li>
 					<li>
 						<a href="core/logout"><i class="md md-exit-to-app"></i>Log Out</a>
@@ -99,13 +99,13 @@
 						<a href="areas"><i class="md md-my-location"></i>Areas</a>
 					</li>
 					<li class="<?php echo $page == 'agents'?'active':''; ?>">
-						<a href="agents"><i class="md md-perm-identity"></i>Agents</a>
+						<a href="agents"><i class="md md-perm-identity"></i>Customer</a>
 					</li>
 					<li class="dropdown <?php echo in_array($page, array('agent_buyer_budget', 'agent_seller_budget'))?'active':''; ?>" id="dropdownMenu1">
 						<a href="agent_budget" class="dropdown-toggle" data-toggle="dropdown"><i class="md md-shopping-basket"></i>Budgets</a>
 						<ul class="dropdown-menu">
-							<li><a href="agent_buyer_budget"><img style="width: 20px;" src="assets/img/button_b.png" alt="buyer"> Buyers</a></li>
-							<li><a href="agent_seller_budget"><img style="width: 20px;" src="assets/img/button_s.png" alt="buyer"> Sellers</a></li>
+							<li><a href="agent_buyer_budget"><img style="width: 20px;" src="assets/img/sub.png" alt="buyer"> Subscriber</a></li>
+							<li><a href="agent_seller_budget"><img style="width: 20px;" src="assets/img/sub.png" alt="buyer"> Sponsor</a></li>
 						</ul>
 					</li>
 					<?php if($_SESSION['user']["level"] != 0): ?>
@@ -116,8 +116,8 @@
 					<li class="dropdown <?php echo in_array($page, array('buyer_landings', 'seller_landings'))?'active':''; ?>">
 						<a href="landings" class="dropdown-toggle" data-toggle="dropdown"><i class="md md-extension"></i>Landing Pages</a>
 						<ul class="dropdown-menu">
-							<li><a href="buyer_landings"><img style="width: 20px;" src="assets/img/button_b.png" alt="buyer"> Buyers</a></li>
-							<li><a href="seller_landings"><img style="width: 20px;" src="assets/img/button_s.png" alt="buyer"> Sellers</a></li>
+							<li><a href="buyer_landings"><img style="width: 20px;" src="assets/img/sub.png" alt="buyer"> Subscriber</a></li>
+							<li><a href="seller_landings"><img style="width: 20px;" src="assets/img/sub.png" alt="buyer"> Sponsor</a></li>
 						</ul>
 					</li>
 					<li class="<?php echo $page == 'emails' || $page == "templates" || $page == "groups" ?'active':''; ?>">

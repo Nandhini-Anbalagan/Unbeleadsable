@@ -11,7 +11,7 @@ require_once('load/misc/dynamic-form.php');
 				<div class="card-box table-responsive">
 					<div class="row">
 						<div class="col-md-12 m-b-20">
-							<h2 class="page-title pull-left">Agent's Subscription Invoices</h2>
+							<h2 class="page-title pull-left">Customer's Subscription Invoices</h2>
 							 <a class="btn btn-danger waves-effect waves-light pull-right m-r-5" data-toggle="collapse" data-target="#advanceSearch">Advance Search <i class="fa fa-search"></i></a>
 							<?php if($_SESSION['user']['level'] > 50){ ?>
 							<a class="btn btn-primary waves-effect waves-light pull-right m-r-5" href="reccurent_overview"><i class="fa fa-list"></i> &nbsp;Reccurent Overview</a>
@@ -34,7 +34,7 @@ require_once('load/misc/dynamic-form.php');
 								<h3>Advance Search</h3>
 								<form role="form" id="searchInvoice">
 									<div class="form-group col-sm-3">
-										<label>Agent</label>
+										<label>Customer</label>
 										<select class="form-control" name="agent_fk">
 											<option value="-1" style="display: none;">All Agents</option>
 											<<?php foreach($db->getAgents() as $agent){ ?>

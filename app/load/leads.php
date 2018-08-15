@@ -25,14 +25,14 @@ echo "<script>console.log('".IDObfuscator::encode(237)."')</script>";
 
 ?>
 <div class="m-b-30">
-	<h2 class="page-title pull-left">New Agent Leads <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalLeads; ?> Lead<?php echo $totalLeads > 1 ? 's' : '' ?></span>)</span></h2>
+	<h2 class="page-title pull-left">New Customer Leads <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalLeads; ?> Lead<?php echo $totalLeads > 1 ? 's' : '' ?></span>)</span></h2>
 	<button class="btn btn-danger waves-effect waves-light pull-right m-l-5" data-toggle="modal" data-target="#convert-lead-modal">New lead <i class="fa fa-user-plus"></i></button>
 	<div class="btn-group pull-right">
 	<button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Filter Type<span class="m-l-5"><i class="fa fa-filter"></i></span></button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-success"><i class="fa fa-usd"></i></span>Home Sellers</a></li>
-			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-primary"><i class="fa fa-shopping-cart"></i></span>Home Buyers</a></li>
-			<li><a class="filter troll" href="#" data-status="1"><b><span class="m-r-5 text-inverse"><i class="fa fa-signal"></i></span>All</b></a></li>
+			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-success"><i class="fa fa-usd"></i></span>Subscriber</a></li>
+			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-primary"><i class="fa fa-shopping-cart"></i></span>Sponsor</a></li>
+			<li><a class="filter troll" href="#" data-status="1"><b><span class="m-r-5 text-inverse"><i class="fa fa-signal"></i></span>Both</b></a></li>
 		</ul>
 	</div>
 </div>
@@ -49,7 +49,7 @@ echo "<script>console.log('".IDObfuscator::encode(237)."')</script>";
 				<th width="10%">Email</th>
 				<th width="10%">Phone</th>
 				<th width="10%">Areas</th>
-				<th width="10%">Agency</th>
+				<th width="10%">Company</th>
 				<th width="15%">Comments</th>
 				<th width="5%" class="text-center">Ref</th>
 				<th width="15%" class="text-center">Actions</th>
@@ -362,4 +362,3 @@ $(document).ready(function(){
 	$('select').select2();
 });
 </script>
-

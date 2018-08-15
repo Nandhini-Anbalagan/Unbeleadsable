@@ -15,7 +15,7 @@
 								<div class="col-sm-4">
 									<div>
 										<label class="radio-label">
-											Buyer
+											Subscriber
 											<input type="radio" class="radio-custom" name="buyer" value="buyer">
 										</label>
 									</div>
@@ -23,7 +23,7 @@
 								<div class="col-sm-4">
 									<div>
 										<label class="radio-label">
-											Seller
+											Sponsor
 											<input type="radio" class="radio-custom" name="buyer" value="seller">
 										</label>
 									</div>
@@ -150,9 +150,9 @@
 								</div>
 								<div class="col-sm-12">
 									<div class="form-group row">
-										<label for="inputAgency1" class="control-label col-sm-4">Agency</label>
+										<label for="inputAgency1" class="control-label col-sm-4">Company</label>
 										<div class="col-sm-8">
-											<input class="form-control" type="text" name="agency" id="inputAgency1" placeholder="Agency" required>
+											<input class="form-control" type="text" name="agency" id="inputAgency1" placeholder="Companyname">
 										</div>
 									</div>
 								</div>

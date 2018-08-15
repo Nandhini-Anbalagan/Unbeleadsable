@@ -19,7 +19,7 @@ $postCaseAgentSingleView = Tokenizer::add('post-case-agent-singleView', 30, 'sin
 		<tr>
 			<th> Invoice Date </th>
 			<th> Invoice Number </th>
-			<th> Agent </th>
+			<th> Customer </th>
 			<th> Details </th>
 			<th> Amount </th>
 		</tr>
@@ -48,7 +48,7 @@ $postCaseAgentSingleView = Tokenizer::add('post-case-agent-singleView', 30, 'sin
 			<div class="panel panel-color panel-purple">
 				<div class="panel-heading">
 					<button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">×</button>
-					<h2 class="panel-title text-center">View Agent</h2>
+					<h2 class="panel-title text-center">View Customer</h2>
 				</div>
 				<div class="panel-body">
 					<div class="row">

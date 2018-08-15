@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once('head.php');
 	$p = explode("/", $_SERVER['REQUEST_URI']);
  ?>

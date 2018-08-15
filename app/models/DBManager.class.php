@@ -29,7 +29,7 @@ class DBManager extends MySQLConnection{
 	*/
 
 	public function addUser($arr){
-		$query = $this->myDB->prepare("INSERT INTO users VALUES(DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, NULL, DEFAULT, DEFAULT)");
+		$query = $this->myDB->prepare("INSERT INTO users VALUES(DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, 0, NULL, DEFAULT, DEFAULT)");
 
 		if($query->execute(array(trim($arr['username']), md5($arr['password']), trim($arr['email']), trim($arr['name']), $arr['country'], $arr['level']))){
 			$this->write_to_log("User added [Username: " . $arr['username']. "]", $_SESSION['user']['username']);return true;
@@ -1074,7 +1074,7 @@ class DBManager extends MySQLConnection{
 			$query = $this->myDB->prepare("INSERT INTO home_sellers (agent_fk, address, name, phone, email, selling, source, type, comments, status, lang) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			$query->execute(array($array['agent_id'], $array['address'], $array['name'], $array['phone'], $array['email'], $array['selling'], 'm', $array['type'], $array['notes'], $array['status'], $array['lang']));
 		}
-		
+
 		$id = $this->myDB->lastInsertId();
 		$this->myDB->query("INSERT INTO home_sellers_meta(home_lead_fk) VALUES($id)");
 	}

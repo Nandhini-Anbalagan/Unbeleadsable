@@ -19,7 +19,7 @@ $postCaseLandingPic = Tokenizer::add('post-case-landing-picture', 30, 'picture')
 						<div class="row">
 							<div class="col-md-12">
 								<div class="m-b-30">
-									<h2 class="page-title pull-left">Agents</h2>
+									<h2 class="page-title pull-left">Customers</h2>
 								</div>
 
 								<div class="p-20">

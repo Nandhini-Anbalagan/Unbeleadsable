@@ -40,8 +40,8 @@ $postCaseAreaSingle = Tokenizer::add('post-case-area-single', 30, 'single');
 			</tr>
 		</thead>
 		<tbody>
-			<?php 
-			foreach($areas as $value) { 
+			<?php
+			foreach($areas as $value) {
 				$latlng = $value['area_latlng'] != "" ? explode(",", $value['area_latlng']) : "0,0";
 				$agentsMapping = $db->getAgentsByAreaID($value['area_id']);
 			?>
@@ -79,14 +79,14 @@ $postCaseAreaSingle = Tokenizer::add('post-case-area-single', 30, 'single');
 						<?php } ?>
 					</td>
 				</tr>
-			<?php 
+			<?php
 			}
 			if(count($areas) == 0)
-				echo "<tr><td colspan='6' class='text-center'><i>oupps, no area found. Why don't you add one right now?</i></td></tr>" 
+				echo "<tr><td colspan='6' class='text-center'><i>oupps, no area found. Why don't you add one right now?</i></td></tr>"
 			?>
 		</tbody>
 	</table>
-	
+
 	<br><br>
 </div>
 
@@ -119,7 +119,7 @@ $postCaseAreaSingle = Tokenizer::add('post-case-area-single', 30, 'single');
 						</div>
 
 						<div class="form-group">
-							<label for="agents" class="col-sm-12">Agents</label>
+							<label for="agents" class="col-sm-12">Customers</label>
 							<div class="col-sm-12">
 								<select class="select2 select2-multiple" name="agents[]" multiple="multiple" multiple data-placeholder="Choose ...">
 									<optgroup label="Leads">
@@ -145,7 +145,7 @@ $postCaseAreaSingle = Tokenizer::add('post-case-area-single', 30, 'single');
 											echo "<option value='a_".$a['internal_id']."' class='".$bull."'>".$a['agent_name']." - ".$a['agent_agency']." - ".$a['agent_areas']."</option>";
 										} ?>
 									</optgroup>
-									
+
 								</select>
 							</div>
 						</div>
@@ -219,7 +219,7 @@ $postCaseAreaSingle = Tokenizer::add('post-case-area-single', 30, 'single');
 											echo "<option value='a_".$a['internal_id']."' class='".$bull."'>".$a['agent_name']." - ".$a['agent_agency']."</option>";
 										} ?>
 									</optgroup>
-									
+
 								</select>
 							</div>
 						</div>
@@ -266,8 +266,8 @@ $(document).ready(function(){
 	var mapOptions = {
 			draggable: false,
 			center: latlng,
-			zoom: 10,         
-			mapTypeId: google.maps.MapTypeId.ROADMAP         
+			zoom: 10,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
 	function formatSelect (agent){
@@ -298,7 +298,7 @@ $(document).ready(function(){
 		google.maps.event.trigger(map, 'resize');
 		map.setCenter(new google.maps.LatLng(parseFloat($(e.relatedTarget).data('lat')), parseFloat($(e.relatedTarget).data('lng'))));
 		map.setZoom(13);
-		
+
 		if(!$(e.relatedTarget).data('map')){
 			$("div[target='head']").slideDown();
 			$("div[target='name']").slideDown();
@@ -319,14 +319,14 @@ $(document).ready(function(){
 	$('a.remove-row').on('click', function(e){
 		e.preventDefault();
 		var id = $(this).data('id');
-		swal({   
-			title: "Are you sure?",   
-			text: "You will not be able to recover this Area!",   
-			type: "warning",   
-			showCancelButton: true,   
-			confirmButtonColor: "#DD6B55",   
-			confirmButtonText: "Yes, delete it!",   
-			closeOnConfirm: false 
+		swal({
+			title: "Are you sure?",
+			text: "You will not be able to recover this Area!",
+			type: "warning",
+			showCancelButton: true,
+			confirmButtonColor: "#DD6B55",
+			confirmButtonText: "Yes, delete it!",
+			closeOnConfirm: false
 		}, function(){
 			$('#<?php echo $dynamicFormId; ?>').append('<input type="hidden" name="action" value="<?php echo $postActionArea; ?>">'
 				+ '<input type="hidden" name="case" value="<?php echo $postCaseAreaDelete; ?>">'
@@ -338,17 +338,17 @@ $(document).ready(function(){
 
 	function setGoogleMap(mapDiv, autocompleteInput){
 		map = new google.maps.Map(document.getElementById(mapDiv), mapOptions);
-		input = document.getElementById(autocompleteInput); 
+		input = document.getElementById(autocompleteInput);
 
 		marker = new google.maps.Marker({position: latlng, animation: google.maps.Animation.DROP, map: map});
 		autocomplete = new google.maps.places.Autocomplete(input, {types: ["geocode"]});
 
-		autocomplete.bindTo('bounds', map); 
+		autocomplete.bindTo('bounds', map);
 
 		google.maps.event.addListener(autocomplete, 'place_changed', function() {
 			var place = autocomplete.getPlace();
 			map.setCenter(place.geometry.location);
-			map.setZoom(13);  
+			map.setZoom(13);
 			marker.setAnimation(google.maps.Animation.DROP);
 			marker.setPosition(place.geometry.location);
 			$("input[name='latlng']").val(place.geometry.location.lat() + "," + place.geometry.location.lng());
@@ -361,7 +361,6 @@ $(document).ready(function(){
 			$("input[name='latlng']").val(e.latLng.lat() + "," + e.latLng.lng());
 		});
 	}
-	 
+
 });
 </script>
-

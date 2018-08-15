@@ -1,7 +1,7 @@
 <?php
 require_once('header.php');
 require_once('load/misc/dynamic-form.php');
-require_once('load/top-menu.php'); 
+require_once('load/top-menu.php');
 
 if($_SESSION['user']['level'] <= 50)
 	Functions::redirect("agents");
@@ -16,7 +16,7 @@ if($_SESSION['user']['level'] <= 50)
 					<form id="subscription" class="form-horizontal" role="form" data-parsley-validate="" novalidate >
 						<input type="hidden" name="action" value="<?php echo Tokenizer::add('post-action-agent', 20, 'agent'); ?>">
 						<input type="hidden" name="case" value="<?php echo Tokenizer::add('post-case-submit-subscription', 30, 'submit-subscription'); ?>">
-						
+
 						<input type="hidden" name="id" value="">
 						<input type="hidden" name="user_id" value="">
 						<input type="hidden" name="lang" value="">
@@ -45,12 +45,12 @@ if($_SESSION['user']['level'] <= 50)
 						<!-- BILLING BLOCK -->
 						<h2 class="text-center">Billing Information</h2>
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Agent:</label>
+							<label class="col-sm-3 control-label">Company:</label>
 							<div class="col-sm-7">
-								<select id="agent" class="form-control fancy"> 
-									<option value="">Please Select</option> 
+								<select id="agent" class="form-control fancy">
+									<option value="">Please Select</option>
 									<?php foreach ($db->getAgents() as $a){
-										echo '<option value="'.IDObfuscator::encode($a['agent_id']).'">'.$a['agent_name']."(".$a['assigned_area'].") - [".ucwords(str_replace("home_", "", $a['agent_slug']))."]".'</option>'; 
+										echo '<option value="'.IDObfuscator::encode($a['agent_id']).'">'.$a['agent_name']."(".$a['assigned_area'].") - [".ucwords(str_replace("home_", "", $a['agent_slug']))."]".'</option>';
 									} ?>
 								</select>
 							</div>
@@ -185,8 +185,8 @@ if($_SESSION['user']['level'] <= 50)
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Country:</label>
 							<div class="col-sm-7">
-								<select class="form-control fancy" name="country" id="country" > 
-									 <option value="">Please Select</option> 
+								<select class="form-control fancy" name="country" id="country" >
+									 <option value="">Please Select</option>
 									 <option value="US">United States</option>
 									 <option value="CA">Canada</option>
 								 </select>
@@ -258,8 +258,8 @@ if($_SESSION['user']['level'] <= 50)
 							</div>
 						</div>
 						<!-- CREDIT CARD BLOCK -->
-						<input type="hidden" name="process" value="yes" />  
-					</form>   
+						<input type="hidden" name="process" value="yes" />
+					</form>
 				</div>
 			</div>
 		</div>
@@ -268,7 +268,7 @@ if($_SESSION['user']['level'] <= 50)
 
 <script>
 	$('body').on('change','#agent', function(e){
-		e.preventDefault(); 
+		e.preventDefault();
 		$('#<?php echo $dynamicFormId; ?>').append('<input type="hidden" name="action" value="<?php echo Tokenizer::add('post-action-agent', 20, 'agent'); ?>">'
 			+ '<input type="hidden" name="case" value="<?php echo Tokenizer::add('post-case-agent-subscription', 20, 'agent-subscription'); ?>">'
 			+ '<input type="hidden" name="id" value="' + $(this).val() + '">');

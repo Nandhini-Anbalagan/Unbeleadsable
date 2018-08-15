@@ -23,7 +23,7 @@ $postCaseAgentSingleEdit = Tokenizer::add('post-case-agent-singleEdit', 30, 'sin
 							<div class="col-md-12">
 								<div id="agents-wrapper">
 									<div class="m-b-30">
-										<h2 class="page-title pull-left">Agent's Ad Budgets <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2>
+										<h2 class="page-title pull-left">Customer's Ad Budgets <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2>
 										<a id="daterange" class="pull-right btn btn-success" style="margin-right: 10px;"><span class="fa fa-filter"></span> Date Range</a>
 									</div>
 									<div class="clearfix"></div>

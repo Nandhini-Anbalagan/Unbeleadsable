@@ -2,7 +2,7 @@
 <?php require_once('load/top-menu.php'); ?>
 <?php require_once('load/misc/dynamic-form.php'); ?>
 
-<?php 
+<?php
 $agents = $db->getSellerAgents();
 
 	# Tokenizer container
@@ -19,7 +19,7 @@ $postCaseLandingPic = Tokenizer::add('post-case-landing-picture', 30, 'picture')
 					<div class="row">
 						<div class="col-md-12">
 							<div class="m-b-30">
-								<h2 class="page-title pull-left">Agents</h2>
+								<h2 class="page-title pull-left">Customers</h2>
 							</div>
 
 							<div class="p-20">
@@ -28,16 +28,16 @@ $postCaseLandingPic = Tokenizer::add('post-case-landing-picture', 30, 'picture')
 										<th>Name</th>
 									</thead>
 									<tbody>
-										<?php 
+										<?php
 										foreach ($agents as $value) {
 											?>
 											<tr>
 												<td name="name"><a href="javascript:void(0)" data-id="<?php echo $value['agent_id'] ?>"><?php echo $value['agent_name'] ?></a></td>
 											</tr>
-											<?php 
+											<?php
 										}
 										if(COUNT($agents) == 0)
-											echo "<tr><td class='text-center'><i>oupps, no user found. Are you sure you have any?</i></td></tr>" 
+											echo "<tr><td class='text-center'><i>oupps, no user found. Are you sure you have any?</i></td></tr>"
 										?>
 									</tbody>
 								</table>
@@ -74,7 +74,7 @@ $postCaseLandingPic = Tokenizer::add('post-case-landing-picture', 30, 'picture')
 			"dom":
 				"<'row'<'col-sm-12'l><'col-sm-12'f>>" +
 				"<'row'<'col-sm-12'tr>>" +
-				"<'row'<'col-sm-12'i><'col-sm-12'p>>" 
+				"<'row'<'col-sm-12'i><'col-sm-12'p>>"
 		});
 
 		$(':file').change(function(){

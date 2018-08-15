@@ -22,9 +22,9 @@ $totalAgents = count($agents);
 
 ?>
 <div class="m-b-30">
-	<h2 class="page-title pull-left">Agents <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2>
+	<h2 class="page-title pull-left">Customers <span class="text-muted font-13">(Total of <span class="users-count"><?php echo $totalAgents; ?> agent<?php echo $totalAgents > 1 ? 's' : '' ?></span>)</span></h2>
 	<?php if($_SESSION['user']["level"] > 20){ ?>
-	<a href="#" class="btn btn-danger waves-effect waves-light m-l-5 pull-right" data-toggle="modal" data-target="#allEmaillModal"><i class="fa fa-envelope"></i>&nbsp;Email All Agents</a>
+	<a href="#" class="btn btn-danger waves-effect waves-light m-l-5 pull-right" data-toggle="modal" data-target="#allEmaillModal"><i class="fa fa-envelope"></i>&nbsp;Email All Customers</a>
 	<div class="btn-group pull-right m-l-5">
 	<button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Filter Status<span class="m-l-5"><i class="fa fa-filter"></i></span></button>
 		<ul class="dropdown-menu" role="menu">
@@ -38,8 +38,8 @@ $totalAgents = count($agents);
 	<div class="btn-group pull-right m-l-5">
 	<button type="button" class="btn btn-primary dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">Filter Type<span class="m-l-5"><i class="fa fa-filter"></i></span></button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-success"><i class="fa fa-usd"></i></span>Home Sellers</a></li>
-			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-primary"><i class="fa fa-shopping-cart"></i></span>Home Buyers</a></li>
+			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-success"><i class="fa fa-usd"></i></span>Subscriber</a></li>
+			<li><a class="filter troll" href="#" data-status="1"><span class="m-r-5 text-primary"><i class="fa fa-shopping-cart"></i></span>Sponsor</a></li>
 			<li><a class="filter troll" href="#" data-status="1"><b><span class="m-r-5 text-inverse"><i class="fa fa-signal"></i></span>All</b></a></li>
 		</ul>
 	</div>
@@ -56,7 +56,7 @@ $totalAgents = count($agents);
 				<th width="15%">Name</th>
 				<th width="20%">Email</th>
 				<th width="10%">Areas</th>
-				<th width="15%">Agency</th>
+				<th width="15%">Company</th>
 				<th width="15%">Comments</th>
 				<th width="5%" class="text-center">Ref</th>
 				<th width="15%" class="text-center">Actions</th>
