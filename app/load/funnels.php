@@ -147,8 +147,8 @@ $zeAgent = isset($_SESSION['user']['agent_id'])?$_SESSION['user']['agent_id']:0;
 											<div class="col-lg-10">
 												<select name="type" id="type" class="form-control fancy">
 													<option value="">--Select Type--</option>
-													<option value="home_buyers">Home Buyer</option>
-													<option value="home_sellers">Home Seller</option>
+													<option value="home_buyers">Subscriber</option>
+													<option value="home_sellers">Sponsor</option>
 												</select>
 											</div>
 										</div>
